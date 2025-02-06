@@ -23,7 +23,6 @@ function Space() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            console.log("Generate Star!");
             const newStar = {
                 id: crypto.randomUUID(),
                 position: getRandomPosition()
