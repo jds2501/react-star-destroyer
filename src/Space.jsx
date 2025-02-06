@@ -37,7 +37,7 @@ function Space() {
     return (
         <>
             {stars.map((star) => {
-                return <Star id={star.id} position={star.position} destroyCallback={removeStar} />
+                return <Star key={star.id} id={star.id} position={star.position} destroyCallback={removeStar} />
             })}
         </>
     );
