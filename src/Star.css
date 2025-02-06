@@ -1,0 +1,9 @@
+.Star {
+    position: absolute;
+    cursor: pointer;
+}
+
+.Star:focus-visible {
+    filter: brightness(1.5);
+    outline: none;
+}
