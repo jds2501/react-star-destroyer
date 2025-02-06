@@ -14,7 +14,11 @@ function Space() {
     const [stars, setStars] = useState([]);
 
     function removeStar(id) {
-        console.log("Removing star: ", id);
+        setStars(stars => {
+            return stars.filter((star) => {
+                return star.id !== id;
+            });
+        })
     }
 
     useEffect(() => {
